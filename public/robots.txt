@@ -1,0 +1,11 @@
+# robots.txt for meblelazienkowe.com.pl
+# Coming soon page - currently blocking indexing
+
+User-agent: *
+Disallow: /
+
+# When ready to launch, replace with:
+# User-agent: *
+# Allow: /
+# Sitemap: https://www.meblealazienkowe.com.pl/sitemap.xml
+

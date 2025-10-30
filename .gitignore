@@ -1,0 +1,10 @@
+# See https://nextjs.org/docs/app/building-your-application/deploying/static-exports
+.next/
+node_modules/
+dist/
+out/
+.env*
+.vercel/
+*.log
+.DS_Store
+
