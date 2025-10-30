@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     siteName: "meblelazienkowe.com.pl",
     images: [
       {
-        url: "/images/logo.svg",
+        url: "/images/logo_meblelazienkowe_com_pl.png",
         width: 1200,
         height: 630,
         alt: "Meble łazienkowe premium – już wkrótce"
