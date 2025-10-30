@@ -46,7 +46,7 @@ export default function ThemeLanding() {
       >
         Wkrótce uruchomimy
         <br />
-        stronę z meblami łazienkowymi <span style={{ color: "#B89A6B" }}>premium</span>
+        sklep internetowy z meblami łazienkowymi <span style={{ color: "#B89A6B" }}>premium</span>
       </h1>
 
       <p
