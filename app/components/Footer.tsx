@@ -13,8 +13,8 @@ const Footer = () => {
           <span aria-hidden className="opacity-40">
             •
           </span>
-          <a className="hover:text-[#1C1C1C]" href="mailto:kontakt@meblealazienkowe.com.pl">
-            kontakt@meblealazienkowe.com.pl
+          <a className="hover:text-[#1C1C1C]" href="mailto:kontakt@meblelazienkowe.com.pl">
+            kontakt@meblelazienkowe.com.pl
           </a>
         </nav>
       </div>

@@ -7,5 +7,5 @@ Disallow: /
 # When ready to launch, replace with:
 # User-agent: *
 # Allow: /
-# Sitemap: https://www.meblealazienkowe.com.pl/sitemap.xml
+# Sitemap: https://www.meblelazienkowe.com.pl/sitemap.xml
 

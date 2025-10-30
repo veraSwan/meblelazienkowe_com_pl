@@ -44,7 +44,7 @@
    ```txt
    User-agent: *
    Allow: /
-   Sitemap: https://www.meblealazienkowe.com.pl/sitemap.xml
+   Sitemap: https://www.meblelazienkowe.com.pl/sitemap.xml
    ```
 
 2. **Update metadata** in `app/layout.tsx`:
@@ -81,7 +81,7 @@
 - Robots are blocked to prevent premature indexing
 - All SEO foundations are in place for launch
 - Phone number: +48 786 886 819
-- Email: kontakt@meblealazienkowe.com.pl
+- Email: kontakt@meblelazienkowe.com.pl
 
 ## 🚀 Launch Checklist
 

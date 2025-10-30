@@ -15,8 +15,8 @@ const ContactSection = () => {
             <Link href="tel:+48786886819" className="btn btn-secondary">
               Zadzwoń: +48 786 886 819
             </Link>
-            <Link href="mailto:kontakt@meblealazienkowe.com.pl" className="btn btn-primary">
-              kontakt@meblealazienkowe.com.pl
+            <Link href="mailto:kontakt@meblelazienkowe.com.pl" className="btn btn-primary">
+              kontakt@meblelazienkowe.com.pl
             </Link>
           </div>
         </div>

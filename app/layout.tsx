@@ -7,7 +7,7 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"], display: "swap" });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.meblealazienkowe.com.pl"),
+  metadataBase: new URL("https://www.meblelazienkowe.com.pl"),
   title: "Meble łazienkowe premium – wkrótce start | meblelazienkowe.com.pl",
   description:
     "Rzemieślnicze meble łazienkowe na wymiar: premium materiały, konfigurator i montaż.",
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     title: "meblelazienkowe.com.pl – już wkrótce",
     description:
       "Rzemieślnicze meble łazienkowe na wymiar: premium materiały, konfigurator i montaż.",
-    url: "https://www.meblealazienkowe.com.pl",
+    url: "https://www.meblelazienkowe.com.pl",
     siteName: "meblelazienkowe.com.pl",
     images: [
       {
@@ -52,7 +52,7 @@ export const metadata: Metadata = {
       "Rzemieślnicze meble łazienkowe na wymiar: premium materiały, konfigurator i montaż."
   },
   alternates: {
-    canonical: "https://www.meblealazienkowe.com.pl"
+    canonical: "https://www.meblelazienkowe.com.pl"
   },
   verification: {
     // Add when ready:
@@ -69,12 +69,12 @@ export default function RootLayout({ children }: RootLayoutProps) {
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    "@id": "https://www.meblealazienkowe.com.pl/#business",
+    "@id": "https://www.meblelazienkowe.com.pl/#business",
     "name": "Meble Łazienkowe",
     "description": "Rzemieślnicze meble łazienkowe na wymiar z materiałów klasy premium. Projektowanie, produkcja i montaż szafek łazienkowych.",
-    "url": "https://www.meblealazienkowe.com.pl",
+    "url": "https://www.meblelazienkowe.com.pl",
     "telephone": "+48786886819",
-    "email": "kontakt@meblealazienkowe.com.pl",
+    "email": "kontakt@meblelazienkowe.com.pl",
     "address": {
       "@type": "PostalAddress",
       "addressCountry": "PL"

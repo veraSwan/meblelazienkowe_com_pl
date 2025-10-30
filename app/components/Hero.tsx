@@ -28,9 +28,9 @@ const Hero = () => {
             </a>
             <a
               className="inline-flex items-center justify-center rounded-2xl bg-white px-6 py-3.5 text-sm font-semibold text-[#1C1C1C] ring-1 ring-inset ring-[#D7DBE0] shadow-sm hover:bg-[#F0F2F4]"
-              href="mailto:kontakt@meblealazienkowe.com.pl"
+              href="mailto:kontakt@meblelazienkowe.com.pl"
             >
-              kontakt@meblealazienkowe.com.pl
+              kontakt@meblelazienkowe.com.pl
             </a>
           </div>
         </div>
