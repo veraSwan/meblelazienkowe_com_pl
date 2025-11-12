@@ -1,206 +1,62 @@
-"use client";
-import Image from "next/image";
-
 export default function ThemeLanding() {
   return (
-    <main
-      style={{
-        maxWidth: "1100px",
-        margin: "0 auto",
-        padding: "40px 20px",
-        fontFamily: "system-ui, sans-serif",
-        color: "#2E3944",
-        background: "#F6F7F8",
-        display: "flex",
-        flexDirection: "column",
-        flex: "1"
-      }}
-    >
-      <div style={{ marginBottom: "24px" }}>
-        <div
-          style={{
-            display: "inline-block",
-            background: "#fff",
-            padding: "6px 12px",
-            borderRadius: "999px",
-            border: "1px solid #E5E7EB",
-            fontSize: "13px",
-            color: "#2E3944"
-          }}
-        >
-          • Nowa odsłona już wkrótce
+    <main className="max-w-screen-xl mx-auto px-4 pt-20 pb-2 text-left md:px-6 md:pt-24 md:pb-4 lg:px-8 mb-2 md:mb-4">
+      <div className="max-w-[880px] space-y-6 text-left">
+        <span className="fade-in-up inline-block mx-auto text-center text-base font-semibold tracking-wide text-gray-700 bg-white/80 border border-gray-200/60 px-5 py-1.5 rounded-full shadow-sm backdrop-blur-sm">
+          Nowa odsłona już wkrótce
+        </span>
+
+        <h1 className="fade-in-up text-4xl font-semibold leading-[1.15] tracking-tight text-neutral-900 md:text-5xl">
+          Meble łazienkowe premium tworzone z dbałością o każdy detal
+        </h1>
+
+        <p className="fade-in-up max-w-prose text-neutral-700 leading-relaxed md:text-lg">
+          Nasze meble powstają z myślą o wnętrzach, w których liczy się spokój i estetyka.
+          <br />
+          Precyzyjne wykonanie i starannie dobrane materiały pozwalają tworzyć przestrzenie, w których codzienność nabiera wyjątkowego charakteru.
+        </p>
+
+        <ul className="mt-4 list-disc space-y-2 pl-6 text-neutral-800 marker:text-amber-500 md:text-lg">
+          <li>Meble na wymiar z materiałów klasy premium</li>
+          <li>Od projektu po montaż – realizacje w całej Polsce</li>
+          <li>Gwarancja jakości i wsparcie posprzedażowe</li>
+        </ul>
+
+        <div className="fade-in-up mt-6 flex flex-wrap gap-3">
+          <a
+            className="fade-in-up rounded-2xl bg-neutral-900 px-5 py-3 text-sm font-medium text-white shadow-[0_2px_6px_rgba(0,0,0,0.08)] transition hover:bg-neutral-800 focus:outline-none focus:ring-2 focus:ring-[#C0A36E]"
+            href="tel:+48786886819"
+            itemProp="telephone"
+            aria-label="Zadzwoń: 786 886 819"
+          >
+            Zadzwoń: 786 886 819
+          </a>
+          <a
+            className="fade-in-up rounded-2xl border border-neutral-200 bg-white px-5 py-3 text-sm font-medium text-neutral-900 transition hover:border-neutral-300 focus:outline-none focus:ring-2 focus:ring-[#C0A36E]"
+            href="mailto:kontakt@meblelazienkowe.com.pl"
+            itemProp="email"
+            aria-label="Email: kontakt@meblelazienkowe.com.pl"
+          >
+            kontakt@meblelazienkowe.com.pl
+          </a>
         </div>
       </div>
 
-      {/* Optional secondary logo below the main header logo */}
-      {/* <Image src="/images/logo1.png" alt="meblelazienkowe.com.pl" width={160} height={60} style={{ marginBottom: "20px" }} /> */}
-
-      <h1
-        style={{
-          fontSize: "36px",
-          lineHeight: "1.1",
-          fontWeight: 700,
-          marginBottom: "16px"
-        }}
-        itemProp="name"
-      >
-        Wkrótce uruchomimy
-        <br />
-        sklep internetowy z meblami łazienkowymi <span style={{ color: "#B89A6B" }}>premium</span>
-      </h1>
-
-      <p
-        style={{
-          maxWidth: "600px",
-          color: "#6B7280",
-          marginBottom: "20px"
-        }}
-      >
-        Z pasją projektujemy i produkujemy szafki łazienkowe na wymiar z materiałów klasy premium. Nasz zespół pracuje nad nową platformą, dzięki której łatwo zaplanujesz wymarzoną łazienkę.
-      </p>
-
-      <ul
-        style={{
-          listStyle: "none",
-          padding: 0,
-          marginBottom: "20px",
-          color: "#374151"
-        }}
-      >
-        <li style={{ marginBottom: "8px" }}>• Meble na wymiar z materiałów premium</li>
-        <li style={{ marginBottom: "8px" }}>• Od projektu po montaż w całej Polsce</li>
-        <li>• Gwarancja jakości i opieka posprzedażowa</li>
-      </ul>
-
-      <div
-        style={{
-          display: "flex",
-          gap: "10px",
-          flexWrap: "wrap",
-          marginBottom: "30px"
-        }}
-      >
-        <a
-          href="tel:+48786886819"
-          style={{
-            background: "#2E3944",
-            color: "#fff",
-            padding: "12px 18px",
-            borderRadius: "10px",
-            textDecoration: "none",
-            fontWeight: 600
-          }}
-          itemProp="telephone"
-          aria-label="Zadzwoń: 786 886 819"
-        >
-          Zadzwoń: 786 886 819
-        </a>
-
-        <a
-          href="mailto:kontakt@meblelazienkowe.com.pl"
-          style={{
-            background: "#fff",
-            color: "#2E3944",
-            padding: "12px 18px",
-            borderRadius: "10px",
-            textDecoration: "none",
-            fontWeight: 600,
-            border: "1px solid #D1D5DB"
-          }}
-          itemProp="email"
-          aria-label="Email: kontakt@meblelazienkowe.com.pl"
-        >
-          kontakt@meblelazienkowe.com.pl
-        </a>
-      </div>
-
-      <section
-        style={{
-          background: "#fff",
-          padding: "20px",
-          borderRadius: "16px",
-          boxShadow: "0 10px 30px rgba(17,24,39,0.08)"
-        }}
-        aria-labelledby="offerings-heading"
-      >
-        <h2 id="offerings-heading" style={{ marginTop: 0 }}>Co przygotowujemy?</h2>
-        <ul
-          style={{
-            listStyle: "none",
-            padding: 0,
-            margin: 0,
-            color: "#374151"
-          }}
-        >
-          <li style={{ marginBottom: "8px" }}>• Zabudowy pod umywalki, toaletki, słupki i szafy</li>
-          <li style={{ marginBottom: "8px" }}>• Rozwiązania na wymiar dla wymagających wnętrz</li>
-          <li>• Montaż i serwis wykonywany przez nasz zespół</li>
+      <section className="mt-10 max-w-[880px] rounded-2xl border border-neutral-200 bg-white p-6 shadow-sm" aria-labelledby="offerings-heading">
+        <h2 id="offerings-heading" className="text-lg font-semibold text-[#1C1C1C] leading-[1.15]">
+          Co przygotowujemy?
+        </h2>
+        <ul className="mt-4 list-disc space-y-2 pl-6 text-sm text-neutral-700 marker:text-amber-500">
+          <li>Zabudowy pod umywalki, toaletki, słupki i szafy</li>
+          <li>Rozwiązania na wymiar dla wymagających wnętrz</li>
+          <li>Montaż i serwis wykonywany przez nasz zespół</li>
         </ul>
       </section>
 
-      {/* <form
-        onSubmit={(e) => {
-          e.preventDefault();
-          alert("Dziękujemy! Powiadomimy Cię o starcie strony.");
-        }}
-        style={{
-          background: "#fff",
-          padding: "20px",
-          borderRadius: "16px",
-          marginTop: "30px",
-          border: "1px solid #EAECEF",
-          boxShadow: "0 4px 12px rgba(17,24,39,0.08)"
-        }}
-      >
-        <label style={{ display: "block", fontWeight: 600, marginBottom: "8px" }}>
-          Powiadom mnie o starcie
-        </label>
-        <div style={{ display: "flex", gap: "10px" }}>
-          <input
-            type="email"
-            placeholder="Twój e-mail"
-            required
-            style={{
-              flex: 1,
-              padding: "12px 14px",
-              borderRadius: "10px",
-              border: "1px solid #D1D5DB"
-            }}
-          />
-          <button
-            type="submit"
-            style={{
-              background: "#2E3944",
-              color: "#fff",
-              padding: "12px 18px",
-              borderRadius: "10px",
-              fontWeight: 600,
-              border: "none"
-            }}
-          >
-            Zapisz się
-          </button>
-        </div>
-      </form> */}
-
-      <footer
-        style={{
-          marginTop: "auto",
-          paddingTop: "40px",
-          color: "#6B7280",
-          fontSize: "14px",
-          display: "flex",
-          justifyContent: "space-between",
-          flexWrap: "wrap",
-          gap: "10px"
-        }}
-      >
+      <footer className="mt-12 flex max-w-[880px] items-center justify-between text-sm text-[#6B7280]">
         <div>© {new Date().getFullYear()} meblelazienkowe.com.pl. Wszystkie prawa zastrzeżone.</div>
         <nav aria-label="Footer navigation">
-          <a
-            href="mailto:kontakt@meblelazienkowe.com.pl"
-            style={{ color: "#2E3944", textDecoration: "none" }}
-          >
+          <a href="mailto:kontakt@meblelazienkowe.com.pl" className="text-[#2E3944]">
             Kontakt
           </a>
         </nav>
@@ -208,5 +64,3 @@ export default function ThemeLanding() {
     </main>
   );
 }
-
-
