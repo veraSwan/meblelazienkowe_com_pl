@@ -1,63 +1,62 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import { ReactNode } from "react";
+import type { ReactNode } from "react";
 
 import "./globals.css";
+import { CompanyChrome } from "./components/CompanyChrome";
 
 const inter = Inter({ subsets: ["latin"], display: "swap" });
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.meblelazienkowe.com.pl"),
-  title: "Meble łazienkowe premium – wkrótce start | meblelazienkowe.com.pl",
-  description:
-    "Rzemieślnicze meble łazienkowe na wymiar: premium materiały, konfigurator i montaż.",
-  keywords: [
-    "meble łazienkowe",
-    "meble łazienkowe na wymiar",
-    "szafki łazienkowe",
-    "meble premium",
-    "zabudowa łazienkowa",
-    "toaletki łazienkowe",
-    "słupki łazienkowe"
-  ],
-  authors: [{ name: "Meble Łazienkowe" }],
-  robots: {
-    index: false,
-    follow: false
-  },
-  icons: {
-    icon: "/favicon.ico"
-  },
+  title: "SwanIT | meblelazienkowe.com.pl — wkrótce start",
+  description: "SwanIT przygotowuje start marki mebli łazienkowych i sklepu internetowego meblelazienkowe.com.pl.",
+  keywords: ["meble łazienkowe", "SwanIT", "meblelazienkowe.com.pl", "współpraca z dostawcami"],
+  authors: [{ name: "SwanIT Michał Łabędź" }],
+  robots: { index: true, follow: true },
+  icons: { icon: "/favicon.ico" },
   openGraph: {
     type: "website",
     locale: "pl_PL",
-    title: "meblelazienkowe.com.pl – już wkrótce",
-    description:
-      "Rzemieślnicze meble łazienkowe na wymiar: premium materiały, konfigurator i montaż.",
+    title: "meblelazienkowe.com.pl — wkrótce start",
+    description: "Przygotowujemy markę i sklep internetowy z meblami łazienkowymi.",
     url: "https://www.meblelazienkowe.com.pl",
     siteName: "meblelazienkowe.com.pl",
     images: [
       {
-        url: "/images/logo_meblelazienkowe_com_pl.png",
-        width: 1200,
-        height: 630,
-        alt: "Meble łazienkowe premium – już wkrótce"
+        url: "/images/Lucid_Realism_Highresolution_realistic_photo_of_a_modern_Europ_0.jpg",
+        width: 1920,
+        height: 1088,
+        alt: "Nowoczesna aranżacja łazienki"
       }
     ]
   },
   twitter: {
     card: "summary_large_image",
-    title: "meblelazienkowe.com.pl – już wkrótce",
-    description:
-      "Rzemieślnicze meble łazienkowe na wymiar: premium materiały, konfigurator i montaż."
+    title: "meblelazienkowe.com.pl — wkrótce start",
+    description: "Przygotowujemy markę i sklep internetowy z meblami łazienkowymi."
   },
   alternates: {
-    canonical: "https://www.meblelazienkowe.com.pl"
-  },
-  verification: {
-    // Add when ready:
-    // google: "your-google-verification-code",
-    // yandex: "your-yandex-verification-code"
+    canonical: "https://www.meblelazienkowe.com.pl",
+    languages: { pl: "/", en: "/en" }
+  }
+};
+
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": "https://www.meblelazienkowe.com.pl/#organization",
+  name: "SwanIT Michał Łabędź",
+  url: "https://www.meblelazienkowe.com.pl",
+  email: "kontakt@meblelazienkowe.com.pl",
+  taxID: "7642464064",
+  identifier: "301034316",
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: "ul. Rubinowa 45",
+    postalCode: "64-920",
+    addressLocality: "Piła",
+    addressCountry: "PL"
   }
 };
 
@@ -66,36 +65,6 @@ type RootLayoutProps = {
 };
 
 export default function RootLayout({ children }: RootLayoutProps) {
-  const structuredData = {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "@id": "https://www.meblelazienkowe.com.pl/#business",
-    "name": "Meble Łazienkowe",
-    "description": "Rzemieślnicze meble łazienkowe na wymiar z materiałów klasy premium. Projektowanie, produkcja i montaż szafek łazienkowych.",
-    "url": "https://www.meblelazienkowe.com.pl",
-    "telephone": "+48786886819",
-    "email": "kontakt@meblelazienkowe.com.pl",
-    "address": {
-      "@type": "PostalAddress",
-      "addressCountry": "PL"
-    },
-    "priceRange": "€€€",
-    "areaServed": {
-      "@type": "Country",
-      "name": "Polska"
-    },
-    "makesOffer": [
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Product",
-          "name": "Meble łazienkowe na wymiar",
-          "description": "Zabudowy pod umywalki, toaletki, słupki i szafy łazienkowe"
-        }
-      }
-    ]
-  };
-
   return (
     <html lang="pl">
       <head>
@@ -104,10 +73,9 @@ export default function RootLayout({ children }: RootLayoutProps) {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
         />
       </head>
-      <body className={`${inter.className} bg-[#F5F6F7] text-[#1C1C1C] antialiased`}>
-        {children}
+      <body className={inter.className + " bg-[#fbfaf8] text-[#0F1A2B] antialiased"}>
+        <CompanyChrome>{children}</CompanyChrome>
       </body>
     </html>
   );
 }
-
