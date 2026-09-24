@@ -11,7 +11,6 @@ const labels = {
     about: "O nas",
     focus: "Nad czym pracujemy",
     suppliers: "Dla dostawców",
-    contact: "Kontakt",
     contactCta: "Kontakt",
     note: "Wkrótce startujemy."
   },
@@ -19,7 +18,6 @@ const labels = {
     about: "About us",
     focus: "Our work",
     suppliers: "For suppliers",
-    contact: "Contact",
     contactCta: "Contact",
     note: "Launching soon."
   }
@@ -52,12 +50,11 @@ export function CompanyChrome({ children }: { children: ReactNode }) {
             <a href="#about" className="transition hover:text-[#10263a]">{t.about}</a>
             <a href="#focus" className="transition hover:text-[#10263a]">{t.focus}</a>
             <a href="#suppliers" className="transition hover:text-[#10263a]">{t.suppliers}</a>
-            <a href="#contact" className="transition hover:text-[#10263a]">{t.contact}</a>
             <span className="h-5 w-px bg-[#deded7]" aria-hidden="true" />
             <Link href={isEnglish ? "/" : "/en"} className="font-semibold text-[#10263a] transition hover:text-[#643c45]">
               {isEnglish ? "PL" : "EN"}
             </Link>
-            <a href="#contact" className="inline-flex min-h-10 items-center gap-1.5 rounded-full bg-[#10263a] px-5 text-xs font-semibold text-white transition hover:bg-[#25445d]">
+            <a href="#contact" className="inline-flex min-h-10 items-center gap-1.5 rounded-full bg-[#643c45] px-5 text-xs font-semibold text-white transition hover:bg-[#754851] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#643c45]">
               {t.contactCta} <span aria-hidden="true">↗</span>
             </a>
           </div>
@@ -65,7 +62,7 @@ export function CompanyChrome({ children }: { children: ReactNode }) {
             <Link href={isEnglish ? "/" : "/en"} className="text-sm font-semibold text-[#10263a]">
               {isEnglish ? "PL" : "EN"}
             </Link>
-            <a href="#contact" className="inline-flex min-h-10 items-center whitespace-nowrap rounded-full bg-[#10263a] px-4 text-xs font-semibold text-white">
+            <a href="#contact" className="inline-flex min-h-10 items-center whitespace-nowrap rounded-full bg-[#643c45] px-4 text-xs font-semibold text-white transition hover:bg-[#754851] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#643c45]">
               {t.contactCta}
             </a>
           </div>

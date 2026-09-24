@@ -4,7 +4,7 @@ type Locale = "pl" | "en";
 
 type Copy = {
   eyebrow: string;
-  title: string;
+  title: [string, string];
   lead: string;
   primaryCta: string;
   secondaryCta: string;
@@ -35,7 +35,7 @@ type Copy = {
 const copy: Record<Locale, Copy> = {
   pl: {
     eyebrow: "Meble łazienkowe • wkrótce",
-    title: "Dobre meble. Piękna łazienka.",
+    title: ["Dobre meble.", "Piękna łazienka."],
     lead: "Przygotowujemy starannie wybraną ofertę szafek i mebli łazienkowych. Łączymy ponadczasowy wygląd z wygodą codziennego użytkowania.",
     primaryCta: "Poznaj nas",
     secondaryCta: "Dla producentów",
@@ -68,7 +68,7 @@ const copy: Record<Locale, Copy> = {
   },
   en: {
     eyebrow: "Bathroom furniture • coming soon",
-    title: "Good furniture. A better bathroom.",
+    title: ["Good furniture.", "A better bathroom."],
     lead: "We are preparing a carefully selected range of bathroom cabinets and furniture, bringing timeless design together with everyday comfort.",
     primaryCta: "Meet us",
     secondaryCta: "For manufacturers",
@@ -109,21 +109,23 @@ export function CompanyLanding({ locale = "pl" }: { locale?: Locale }) {
   return (
     <main className="bg-[#e5ded3] text-[#10263a]">
       <section className="relative overflow-hidden border-b border-[#cfc5b9] bg-[#e5ded3]">
-        <div className="relative aspect-[16/10] w-full overflow-hidden bg-[#c8b6a5] xl:absolute xl:inset-y-0 xl:right-0 xl:h-full xl:w-[60%] xl:aspect-auto">
+        <div className="hero-photo relative aspect-[1659/948] w-full overflow-hidden bg-[#e5ded3] xl:absolute xl:inset-y-0 xl:right-0 xl:h-full xl:w-[66%] xl:aspect-auto">
           <Image
             src="/images/hero-walnut.png"
             alt={isEnglish ? "Walnut bathroom cabinets with a vanity and mirror" : "Łazienka z orzechowymi szafkami, umywalką i lustrem"}
             fill
             priority
-            sizes="(min-width: 1280px) 60vw, 100vw"
-            className="object-cover object-center"
+            sizes="(min-width: 1280px) 66vw, 100vw"
+            className="object-contain object-right"
           />
         </div>
-        <div className="pointer-events-none absolute inset-0 z-[1] hidden xl:block" style={{ background: "linear-gradient(90deg, #e5ded3 0%, #e5ded3 48%, transparent 64%)" }} />
+        <div className="pointer-events-none absolute inset-0 z-[1] hidden xl:block" style={{ background: "linear-gradient(90deg, #e5ded3 0%, #e5ded3 43%, transparent 56%)" }} />
         <div className="relative z-10 mx-auto max-w-[1320px] px-6 py-14 sm:px-10 sm:py-20 xl:flex xl:min-h-[540px] xl:items-center xl:px-16 xl:py-16 2xl:min-h-[610px]">
           <div className="max-w-[560px]">
             <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#643c45]">{t.eyebrow}</p>
-            <h1 className="mt-7 max-w-[560px] text-[clamp(2.5rem,3.4vw,3.625rem)] font-semibold leading-[1.18] tracking-[-0.025em]">{t.title}</h1>
+            <h1 className="mt-7 max-w-[560px] text-[clamp(2.5rem,3.4vw,3.625rem)] font-semibold leading-[1.18] tracking-[-0.025em]">
+              {t.title.map((line) => <span key={line} className="block">{line}</span>)}
+            </h1>
             <p className="mt-7 max-w-[540px] text-base leading-8 text-[#535b5d] sm:text-lg">{t.lead}</p>
             <div className="mt-9 flex flex-wrap gap-3">
               <a href="#about" className="inline-flex min-h-12 items-center justify-center rounded-full bg-[#643c45] px-6 text-sm font-semibold text-white transition hover:bg-[#7a4b56] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#643c45]">
