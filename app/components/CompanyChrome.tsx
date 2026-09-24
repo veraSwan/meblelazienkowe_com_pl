@@ -35,8 +35,8 @@ export function CompanyChrome({ children }: { children: ReactNode }) {
   }, [isEnglish]);
 
   return (
-    <div className="flex min-h-screen flex-col bg-[#f8f7f3]">
-      <header className="sticky top-0 z-40 border-b border-[#e7e4dd] bg-[#fcfbf8]/95 backdrop-blur">
+    <div className="flex min-h-screen flex-col bg-[#ebe9e2]">
+      <header className="sticky top-0 z-40 border-b border-[#d9d7cf] bg-[#f5f3ed]/95 backdrop-blur">
         <nav className="mx-auto flex h-[76px] max-w-[1320px] items-center justify-between gap-6 px-6 sm:px-10 lg:px-16">
           <Link href={isEnglish ? "/en" : "/"} aria-label={isEnglish ? "meblelazienkowe.com.pl — home" : "meblelazienkowe.com.pl — strona główna"} className="shrink-0">
             <Image
@@ -72,7 +72,7 @@ export function CompanyChrome({ children }: { children: ReactNode }) {
         </nav>
       </header>
       <div className="flex-1">{children}</div>
-      <footer className="border-t border-[#e7e4dd] bg-[#f8f7f3]">
+      <footer className="border-t border-[#d9d7cf] bg-[#ebe9e2]">
         <div className="mx-auto flex max-w-[1320px] flex-col gap-5 px-6 py-9 text-xs text-[#65717a] sm:flex-row sm:items-center sm:justify-between sm:px-10 lg:px-16">
           <div>
             <p className="font-semibold uppercase tracking-[0.14em] text-[#243849]">meblelazienkowe.com.pl</p>
