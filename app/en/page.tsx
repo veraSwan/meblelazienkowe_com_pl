@@ -3,7 +3,7 @@ import { CompanyLanding } from "../components/CompanyLanding";
 
 export const metadata: Metadata = {
   title: "Bathroom furniture | meblelazienkowe.com.pl",
-  description: "We are preparing the launch of our bathroom furniture brand and online store.",
+  description: "We are preparing a carefully selected range of bathroom cabinets and furniture. Discover our approach and partnership opportunities.",
   alternates: { canonical: "/en" }
 };
 

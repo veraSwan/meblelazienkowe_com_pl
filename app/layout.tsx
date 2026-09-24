@@ -9,8 +9,8 @@ const inter = Inter({ subsets: ["latin"], display: "swap" });
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.meblelazienkowe.com.pl"),
-  title: "SwanIT | meblelazienkowe.com.pl — wkrótce start",
-  description: "SwanIT przygotowuje start marki mebli łazienkowych i sklepu internetowego meblelazienkowe.com.pl.",
+  title: "Meble łazienkowe | meblelazienkowe.com.pl",
+  description: "Przygotowujemy ofertę starannie wybranych szafek i mebli łazienkowych. Poznaj naszą koncepcję i możliwości współpracy.",
   keywords: ["meble łazienkowe", "SwanIT", "meblelazienkowe.com.pl", "współpraca z dostawcami"],
   authors: [{ name: "SwanIT Michał Łabędź" }],
   robots: { index: true, follow: true },
@@ -18,23 +18,23 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "pl_PL",
-    title: "meblelazienkowe.com.pl — wkrótce start",
-    description: "Przygotowujemy markę i sklep internetowy z meblami łazienkowymi.",
+    title: "Meble łazienkowe | meblelazienkowe.com.pl",
+    description: "Przygotowujemy ofertę starannie wybranych szafek i mebli łazienkowych.",
     url: "https://www.meblelazienkowe.com.pl",
     siteName: "meblelazienkowe.com.pl",
     images: [
       {
-        url: "/images/Lucid_Realism_Highresolution_realistic_photo_of_a_modern_Europ_0.jpg",
-        width: 1920,
-        height: 1088,
-        alt: "Nowoczesna aranżacja łazienki"
+        url: "/images/gemini-2.5-flash-image_provide_this_furniture_set_in_sage_green_colour-0.jpg",
+        width: 1344,
+        height: 768,
+        alt: "Nowoczesna łazienka z zielonymi szafkami"
       }
     ]
   },
   twitter: {
     card: "summary_large_image",
-    title: "meblelazienkowe.com.pl — wkrótce start",
-    description: "Przygotowujemy markę i sklep internetowy z meblami łazienkowymi."
+    title: "Meble łazienkowe | meblelazienkowe.com.pl",
+    description: "Przygotowujemy ofertę starannie wybranych szafek i mebli łazienkowych."
   },
   alternates: {
     canonical: "https://www.meblelazienkowe.com.pl",
