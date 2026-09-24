@@ -107,22 +107,22 @@ export function CompanyLanding({ locale = "pl" }: { locale?: Locale }) {
   const subject = encodeURIComponent(isEnglish ? "Supplier cooperation enquiry" : "Zapytanie o współpracę dostawcy");
 
   return (
-    <main className="bg-[#e5ded3] text-[#243849]">
+    <main className="bg-[#e5ded3] text-[#1b2932]">
       <section className="overflow-hidden border-b border-[#cfc5b9] bg-[#e5ded3]">
         <div className="mx-auto grid max-w-[1320px] lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] lg:items-center lg:gap-12 lg:px-16 xl:gap-16">
           <div className="order-2 px-6 py-14 sm:px-10 sm:py-20 lg:order-1 lg:px-0 lg:py-24">
             <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#643c45]">{t.eyebrow}</p>
             <h1 className="mt-7 max-w-[560px] text-[clamp(2.5rem,3.4vw,3.625rem)] font-semibold leading-[1.18] tracking-[-0.025em]">{t.title}</h1>
-            <p className="mt-7 max-w-[540px] text-base leading-8 text-[#52616a] sm:text-lg">{t.lead}</p>
+            <p className="mt-7 max-w-[540px] text-base leading-8 text-[#535b5d] sm:text-lg">{t.lead}</p>
             <div className="mt-9 flex flex-wrap gap-3">
               <a href="#about" className="inline-flex min-h-12 items-center justify-center rounded-full bg-[#643c45] px-6 text-sm font-semibold text-white transition hover:bg-[#7a4b56] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#643c45]">
                 {t.primaryCta} <span className="ml-3" aria-hidden="true">↗</span>
               </a>
-              <a href="#suppliers" className="inline-flex min-h-12 items-center justify-center rounded-full border border-[#b9b9af] px-6 text-sm font-semibold text-[#243849] transition hover:border-[#243849] hover:bg-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#243849]">
+              <a href="#suppliers" className="inline-flex min-h-12 items-center justify-center rounded-full border border-[#b9b9af] px-6 text-sm font-semibold text-[#1b2932] transition hover:border-[#1b2932] hover:bg-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#1b2932]">
                 {t.secondaryCta}
               </a>
             </div>
-            <p className="mt-12 flex items-center gap-3 border-t border-[#c9bfb3] pt-5 text-sm text-[#5b686e]">
+            <p className="mt-12 flex items-center gap-3 border-t border-[#c9bfb3] pt-5 text-sm text-[#62625e]">
               <span className="h-2 w-2 shrink-0 rounded-full bg-[#8b5a61]" aria-hidden="true" />
               {t.status}
             </p>
@@ -148,7 +148,7 @@ export function CompanyLanding({ locale = "pl" }: { locale?: Locale }) {
           <div className="max-w-[560px]">
             <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#643c45]">{t.aboutEyebrow}</p>
             <h2 className="mt-5 text-3xl font-semibold leading-[1.18] tracking-[-0.03em] sm:text-4xl">{t.aboutTitle}</h2>
-            <div className="mt-6 space-y-4 text-base leading-8 text-[#52616a]">
+            <div className="mt-6 space-y-4 text-base leading-8 text-[#535b5d]">
               <p>{t.aboutBody}</p>
               <p>{t.aboutBody2}</p>
             </div>
@@ -161,21 +161,21 @@ export function CompanyLanding({ locale = "pl" }: { locale?: Locale }) {
           <div className="max-w-[690px]">
             <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#643c45]">{t.focusEyebrow}</p>
             <h2 className="mt-5 text-3xl font-semibold tracking-[-0.03em] sm:text-4xl">{t.focusTitle}</h2>
-            <p className="mt-5 text-base leading-8 text-[#52616a]">{t.focusLead}</p>
+            <p className="mt-5 text-base leading-8 text-[#535b5d]">{t.focusLead}</p>
           </div>
           <div className="mt-10 grid gap-4 lg:grid-cols-3">
             {t.focusCards.map((card, index) => (
               <article key={card.title} className="flex h-full flex-col rounded-[18px] border border-[#d7c8c3] bg-[#f7f2eb] p-7 sm:p-8">
                 <span className="text-sm font-semibold tracking-[0.12em] text-[#643c45]">0{index + 1}</span>
                 <h3 className="mt-8 text-xl font-semibold tracking-[-0.02em]">{card.title}</h3>
-                <p className="mt-3 text-sm leading-7 text-[#52616a]">{card.body}</p>
+                <p className="mt-3 text-sm leading-7 text-[#535b5d]">{card.body}</p>
               </article>
             ))}
           </div>
         </div>
       </section>
 
-      <section id="suppliers" className="scroll-mt-24 bg-[#243849] py-20 text-white sm:py-28">
+      <section id="suppliers" className="scroll-mt-24 bg-[#1b2932] py-20 text-white sm:py-28">
         <div className="mx-auto max-w-[1200px] px-6 sm:px-10 lg:px-16">
           <div className="grid items-end gap-9 lg:grid-cols-[minmax(0,1fr)_auto] lg:gap-14">
             <div className="max-w-[760px]">
@@ -183,7 +183,7 @@ export function CompanyLanding({ locale = "pl" }: { locale?: Locale }) {
               <h2 className="mt-5 text-3xl font-semibold leading-[1.18] tracking-[-0.03em] sm:text-4xl">{t.suppliersTitle}</h2>
               <p className="mt-6 max-w-[650px] text-base leading-8 text-white/75">{t.suppliersBody}</p>
             </div>
-            <a href={"mailto:kontakt@meblelazienkowe.com.pl?subject=" + subject} className="inline-flex min-h-12 items-center justify-center rounded-full bg-[#f2ece3] px-6 text-sm font-semibold text-[#243849] transition hover:bg-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">
+            <a href={"mailto:kontakt@meblelazienkowe.com.pl?subject=" + subject} className="inline-flex min-h-12 items-center justify-center rounded-full bg-[#f2ece3] px-6 text-sm font-semibold text-[#1b2932] transition hover:bg-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">
               {t.suppliersCta} <span className="ml-3" aria-hidden="true">↗</span>
             </a>
           </div>
@@ -200,7 +200,7 @@ export function CompanyLanding({ locale = "pl" }: { locale?: Locale }) {
           <div>
             <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#643c45]">{t.contactEyebrow}</p>
             <h2 className="mt-5 text-3xl font-semibold tracking-[-0.03em] sm:text-4xl">{t.contactTitle}</h2>
-            <p className="mt-5 max-w-[480px] text-base leading-8 text-[#52616a]">{t.contactBody}</p>
+            <p className="mt-5 max-w-[480px] text-base leading-8 text-[#535b5d]">{t.contactBody}</p>
             <a href="mailto:kontakt@meblelazienkowe.com.pl" className="mt-7 inline-flex min-h-12 items-center justify-center rounded-full bg-[#643c45] px-6 text-sm font-semibold text-white transition hover:bg-[#7a4b56]">
               {t.contactCta} <span className="ml-3" aria-hidden="true">↗</span>
             </a>
@@ -208,11 +208,11 @@ export function CompanyLanding({ locale = "pl" }: { locale?: Locale }) {
           <div className="rounded-[18px] border border-[#d2c5b9] bg-[#e5ded3] p-7 sm:p-8">
             <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#643c45]">{t.companyDetailsLabel}</p>
             <p className="mt-5 text-lg font-semibold">SwanIT Michał Łabędź</p>
-            <a href="mailto:kontakt@meblelazienkowe.com.pl" className="mt-2 block break-all text-sm font-medium text-[#243849] underline decoration-[#a47e78] underline-offset-4 hover:text-[#643c45]">kontakt@meblelazienkowe.com.pl</a>
-            <div className="mt-6 grid gap-3 border-t border-[#deded7] pt-6 text-sm leading-6 text-[#52616a]">
-              <p><span className="font-semibold text-[#243849]">NIP:</span> 764 246 40 64</p>
-              <p><span className="font-semibold text-[#243849]">REGON:</span> 301034316</p>
-              <p><span className="font-semibold text-[#243849]">{t.addressLabel}:</span> ul. Rubinowa 45, 64-920 Piła</p>
+            <a href="mailto:kontakt@meblelazienkowe.com.pl" className="mt-2 block break-all text-sm font-medium text-[#1b2932] underline decoration-[#a47e78] underline-offset-4 hover:text-[#643c45]">kontakt@meblelazienkowe.com.pl</a>
+            <div className="mt-6 grid gap-3 border-t border-[#deded7] pt-6 text-sm leading-6 text-[#535b5d]">
+              <p><span className="font-semibold text-[#1b2932]">NIP:</span> 764 246 40 64</p>
+              <p><span className="font-semibold text-[#1b2932]">REGON:</span> 301034316</p>
+              <p><span className="font-semibold text-[#1b2932]">{t.addressLabel}:</span> ul. Rubinowa 45, 64-920 Piła</p>
               <p className="flex items-center gap-2"><span className="h-2 w-2 rounded-full bg-[#8b5a61]" aria-hidden="true" />{t.activeBusiness}</p>
             </div>
           </div>
