@@ -107,8 +107,8 @@ export function CompanyLanding({ locale = "pl" }: { locale?: Locale }) {
   const subject = encodeURIComponent(isEnglish ? "Supplier cooperation enquiry" : "Zapytanie o współpracę dostawcy");
 
   return (
-    <main className="bg-[#ebe9e2] text-[#243849]">
-      <section className="overflow-hidden border-b border-[#d9d7cf] bg-[#ebe9e2]">
+    <main className="bg-[#deded4] text-[#243849]">
+      <section className="overflow-hidden border-b border-[#cbc9bf] bg-[#deded4]">
         <div className="mx-auto grid max-w-[1320px] lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] lg:items-center lg:gap-12 lg:px-16 xl:gap-16">
           <div className="order-2 px-6 py-14 sm:px-10 sm:py-20 lg:order-1 lg:px-0 lg:py-24">
             <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#856344]">{t.eyebrow}</p>
@@ -122,7 +122,7 @@ export function CompanyLanding({ locale = "pl" }: { locale?: Locale }) {
                 {t.secondaryCta}
               </a>
             </div>
-            <p className="mt-12 flex items-center gap-3 border-t border-[#cfcec5] pt-5 text-sm text-[#5b686e]">
+            <p className="mt-12 flex items-center gap-3 border-t border-[#c2c1b7] pt-5 text-sm text-[#5b686e]">
               <span className="h-2 w-2 shrink-0 rounded-full bg-[#a6ad94]" aria-hidden="true" />
               {t.status}
             </p>
@@ -140,7 +140,7 @@ export function CompanyLanding({ locale = "pl" }: { locale?: Locale }) {
         </div>
       </section>
 
-      <section id="about" className="scroll-mt-24 bg-[#f5f3ed] py-20 sm:py-28">
+      <section id="about" className="scroll-mt-24 bg-[#e8e5dc] py-20 sm:py-28">
         <div className="mx-auto grid max-w-[1200px] items-center gap-12 px-6 sm:px-10 lg:grid-cols-2 lg:gap-20 lg:px-16">
           <div className="relative aspect-[4/3] overflow-hidden rounded-[20px] bg-[#e8e5df]">
             <Image src="/images/Lucid_Realism_Highresolution_realistic_photo_of_a_modern_Europ_1.jpg" alt={t.aboutImageAlt} fill sizes="(min-width: 1024px) 50vw, 100vw" className="object-cover" />
@@ -156,7 +156,7 @@ export function CompanyLanding({ locale = "pl" }: { locale?: Locale }) {
         </div>
       </section>
 
-      <section id="focus" className="scroll-mt-24 bg-[#e7ece4] py-20 sm:py-28">
+      <section id="focus" className="scroll-mt-24 bg-[#d4dfd1] py-20 sm:py-28">
         <div className="mx-auto max-w-[1200px] px-6 sm:px-10 lg:px-16">
           <div className="max-w-[690px]">
             <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#856344]">{t.focusEyebrow}</p>
@@ -195,7 +195,7 @@ export function CompanyLanding({ locale = "pl" }: { locale?: Locale }) {
         </div>
       </section>
 
-      <section id="contact" className="scroll-mt-24 bg-[#f5f3ed] py-20 sm:py-28">
+      <section id="contact" className="scroll-mt-24 bg-[#e8e5dc] py-20 sm:py-28">
         <div className="mx-auto grid max-w-[1200px] gap-10 px-6 sm:px-10 lg:grid-cols-[minmax(0,1fr)_minmax(0,0.9fr)] lg:items-center lg:gap-20 lg:px-16">
           <div>
             <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#856344]">{t.contactEyebrow}</p>
@@ -205,7 +205,7 @@ export function CompanyLanding({ locale = "pl" }: { locale?: Locale }) {
               {t.contactCta} <span className="ml-3" aria-hidden="true">↗</span>
             </a>
           </div>
-          <div className="rounded-[18px] border border-[#d9d7cf] bg-[#ebe9e2] p-7 sm:p-8">
+          <div className="rounded-[18px] border border-[#cbc9bf] bg-[#deded4] p-7 sm:p-8">
             <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#856344]">{t.companyDetailsLabel}</p>
             <p className="mt-5 text-lg font-semibold">SwanIT Michał Łabędź</p>
             <a href="mailto:kontakt@meblelazienkowe.com.pl" className="mt-2 block break-all text-sm font-medium text-[#243849] underline decoration-[#c8ae86] underline-offset-4 hover:text-[#856344]">kontakt@meblelazienkowe.com.pl</a>
