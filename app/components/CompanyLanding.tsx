@@ -107,10 +107,21 @@ export function CompanyLanding({ locale = "pl" }: { locale?: Locale }) {
   const subject = encodeURIComponent(isEnglish ? "Supplier cooperation enquiry" : "Zapytanie o współpracę dostawcy");
 
   return (
-    <main className="bg-[#e5ded3] text-[#1b2932]">
-      <section className="overflow-hidden border-b border-[#cfc5b9] bg-[#e5ded3]">
-        <div className="mx-auto grid max-w-[1320px] lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] lg:items-center lg:gap-12 lg:px-16 xl:gap-16">
-          <div className="order-2 px-6 py-14 sm:px-10 sm:py-20 lg:order-1 lg:px-0 lg:py-24">
+    <main className="bg-[#e5ded3] text-[#10263a]">
+      <section className="relative overflow-hidden border-b border-[#cfc5b9] bg-[#e5ded3]">
+        <div className="relative aspect-[16/10] w-full overflow-hidden bg-[#c8b6a5] xl:absolute xl:inset-y-0 xl:right-0 xl:h-full xl:w-[60%] xl:aspect-auto">
+          <Image
+            src="/images/hero-walnut.png"
+            alt={isEnglish ? "Walnut bathroom cabinets with a vanity and mirror" : "Łazienka z orzechowymi szafkami, umywalką i lustrem"}
+            fill
+            priority
+            sizes="(min-width: 1280px) 60vw, 100vw"
+            className="object-cover object-center"
+          />
+        </div>
+        <div className="pointer-events-none absolute inset-0 z-[1] hidden xl:block" style={{ background: "linear-gradient(90deg, #e5ded3 0%, #e5ded3 48%, transparent 64%)" }} />
+        <div className="relative z-10 mx-auto max-w-[1320px] px-6 py-14 sm:px-10 sm:py-20 xl:flex xl:min-h-[540px] xl:items-center xl:px-16 xl:py-16 2xl:min-h-[610px]">
+          <div className="max-w-[560px]">
             <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#643c45]">{t.eyebrow}</p>
             <h1 className="mt-7 max-w-[560px] text-[clamp(2.5rem,3.4vw,3.625rem)] font-semibold leading-[1.18] tracking-[-0.025em]">{t.title}</h1>
             <p className="mt-7 max-w-[540px] text-base leading-8 text-[#535b5d] sm:text-lg">{t.lead}</p>
@@ -118,7 +129,7 @@ export function CompanyLanding({ locale = "pl" }: { locale?: Locale }) {
               <a href="#about" className="inline-flex min-h-12 items-center justify-center rounded-full bg-[#643c45] px-6 text-sm font-semibold text-white transition hover:bg-[#7a4b56] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#643c45]">
                 {t.primaryCta} <span className="ml-3" aria-hidden="true">↗</span>
               </a>
-              <a href="#suppliers" className="inline-flex min-h-12 items-center justify-center rounded-full border border-[#b9b9af] px-6 text-sm font-semibold text-[#1b2932] transition hover:border-[#1b2932] hover:bg-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#1b2932]">
+              <a href="#suppliers" className="inline-flex min-h-12 items-center justify-center rounded-full border border-[#b9b9af] px-6 text-sm font-semibold text-[#10263a] transition hover:border-[#10263a] hover:bg-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#10263a]">
                 {t.secondaryCta}
               </a>
             </div>
@@ -126,16 +137,6 @@ export function CompanyLanding({ locale = "pl" }: { locale?: Locale }) {
               <span className="h-2 w-2 shrink-0 rounded-full bg-[#8b5a61]" aria-hidden="true" />
               {t.status}
             </p>
-          </div>
-          <div className="relative order-1 h-[350px] overflow-hidden bg-[#c8b6a5] sm:h-[470px] lg:order-2 lg:h-[610px] lg:rounded-[22px]">
-            <Image
-              src="/images/hero-walnut.png"
-              alt={isEnglish ? "Walnut bathroom cabinets with a vanity and mirror" : "Łazienka z orzechowymi szafkami, umywalką i lustrem"}
-              fill
-              priority
-              sizes="(min-width: 1024px) 55vw, 100vw"
-              className="object-cover object-center"
-            />
           </div>
         </div>
       </section>
@@ -175,7 +176,7 @@ export function CompanyLanding({ locale = "pl" }: { locale?: Locale }) {
         </div>
       </section>
 
-      <section id="suppliers" className="scroll-mt-24 bg-[#1b2932] py-20 text-white sm:py-28">
+      <section id="suppliers" className="scroll-mt-24 bg-[#10263a] py-20 text-white sm:py-28">
         <div className="mx-auto max-w-[1200px] px-6 sm:px-10 lg:px-16">
           <div className="grid items-end gap-9 lg:grid-cols-[minmax(0,1fr)_auto] lg:gap-14">
             <div className="max-w-[760px]">
@@ -183,7 +184,7 @@ export function CompanyLanding({ locale = "pl" }: { locale?: Locale }) {
               <h2 className="mt-5 text-3xl font-semibold leading-[1.18] tracking-[-0.03em] sm:text-4xl">{t.suppliersTitle}</h2>
               <p className="mt-6 max-w-[650px] text-base leading-8 text-white/75">{t.suppliersBody}</p>
             </div>
-            <a href={"mailto:kontakt@meblelazienkowe.com.pl?subject=" + subject} className="inline-flex min-h-12 items-center justify-center rounded-full bg-[#f2ece3] px-6 text-sm font-semibold text-[#1b2932] transition hover:bg-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">
+            <a href={"mailto:kontakt@meblelazienkowe.com.pl?subject=" + subject} className="inline-flex min-h-12 items-center justify-center rounded-full bg-[#f2ece3] px-6 text-sm font-semibold text-[#10263a] transition hover:bg-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">
               {t.suppliersCta} <span className="ml-3" aria-hidden="true">↗</span>
             </a>
           </div>
@@ -208,11 +209,11 @@ export function CompanyLanding({ locale = "pl" }: { locale?: Locale }) {
           <div className="rounded-[18px] border border-[#d2c5b9] bg-[#e5ded3] p-7 sm:p-8">
             <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#643c45]">{t.companyDetailsLabel}</p>
             <p className="mt-5 text-lg font-semibold">SwanIT Michał Łabędź</p>
-            <a href="mailto:kontakt@meblelazienkowe.com.pl" className="mt-2 block break-all text-sm font-medium text-[#1b2932] underline decoration-[#a47e78] underline-offset-4 hover:text-[#643c45]">kontakt@meblelazienkowe.com.pl</a>
+            <a href="mailto:kontakt@meblelazienkowe.com.pl" className="mt-2 block break-all text-sm font-medium text-[#10263a] underline decoration-[#a47e78] underline-offset-4 hover:text-[#643c45]">kontakt@meblelazienkowe.com.pl</a>
             <div className="mt-6 grid gap-3 border-t border-[#deded7] pt-6 text-sm leading-6 text-[#535b5d]">
-              <p><span className="font-semibold text-[#1b2932]">NIP:</span> 764 246 40 64</p>
-              <p><span className="font-semibold text-[#1b2932]">REGON:</span> 301034316</p>
-              <p><span className="font-semibold text-[#1b2932]">{t.addressLabel}:</span> ul. Rubinowa 45, 64-920 Piła</p>
+              <p><span className="font-semibold text-[#10263a]">NIP:</span> 764 246 40 64</p>
+              <p><span className="font-semibold text-[#10263a]">REGON:</span> 301034316</p>
+              <p><span className="font-semibold text-[#10263a]">{t.addressLabel}:</span> ul. Rubinowa 45, 64-920 Piła</p>
               <p className="flex items-center gap-2"><span className="h-2 w-2 rounded-full bg-[#8b5a61]" aria-hidden="true" />{t.activeBusiness}</p>
             </div>
           </div>
