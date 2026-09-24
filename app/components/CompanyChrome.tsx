@@ -35,8 +35,8 @@ export function CompanyChrome({ children }: { children: ReactNode }) {
   }, [isEnglish]);
 
   return (
-    <div className="flex min-h-screen flex-col bg-[#deded4]">
-      <header className="sticky top-0 z-40 border-b border-[#cbc9bf] bg-[#f0eee7]/95 backdrop-blur">
+    <div className="flex min-h-screen flex-col bg-[#e5ded3]">
+      <header className="sticky top-0 z-40 border-b border-[#d7ccc1] bg-[#f5f0e9]/95 backdrop-blur">
         <nav className="mx-auto flex h-[76px] max-w-[1320px] items-center justify-between gap-6 px-6 sm:px-10 lg:px-16">
           <Link href={isEnglish ? "/en" : "/"} aria-label={isEnglish ? "meblelazienkowe.com.pl — home" : "meblelazienkowe.com.pl — strona główna"} className="shrink-0">
             <Image
@@ -54,7 +54,7 @@ export function CompanyChrome({ children }: { children: ReactNode }) {
             <a href="#suppliers" className="transition hover:text-[#243849]">{t.suppliers}</a>
             <a href="#contact" className="transition hover:text-[#243849]">{t.contact}</a>
             <span className="h-5 w-px bg-[#deded7]" aria-hidden="true" />
-            <Link href={isEnglish ? "/" : "/en"} className="font-semibold text-[#243849] transition hover:text-[#856344]">
+            <Link href={isEnglish ? "/" : "/en"} className="font-semibold text-[#243849] transition hover:text-[#643c45]">
               {isEnglish ? "PL" : "EN"}
             </Link>
             <a href="#contact" className="inline-flex min-h-10 items-center gap-1.5 rounded-full bg-[#243849] px-5 text-xs font-semibold text-white transition hover:bg-[#385369]">
@@ -72,14 +72,14 @@ export function CompanyChrome({ children }: { children: ReactNode }) {
         </nav>
       </header>
       <div className="flex-1">{children}</div>
-      <footer className="border-t border-[#cbc9bf] bg-[#deded4]">
+      <footer className="border-t border-[#d7ccc1] bg-[#e5ded3]">
         <div className="mx-auto flex max-w-[1320px] flex-col gap-5 px-6 py-9 text-xs text-[#65717a] sm:flex-row sm:items-center sm:justify-between sm:px-10 lg:px-16">
           <div>
             <p className="font-semibold uppercase tracking-[0.14em] text-[#243849]">meblelazienkowe.com.pl</p>
             <p className="mt-2">{t.note}</p>
             <p className="mt-2">SwanIT Michał Łabędź · NIP 764 246 40 64</p>
           </div>
-          <a href="mailto:kontakt@meblelazienkowe.com.pl" className="font-semibold text-[#243849] hover:text-[#856344]">
+          <a href="mailto:kontakt@meblelazienkowe.com.pl" className="font-semibold text-[#243849] hover:text-[#643c45]">
             kontakt@meblelazienkowe.com.pl
           </a>
         </div>
