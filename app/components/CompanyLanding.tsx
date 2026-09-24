@@ -35,7 +35,7 @@ type Copy = {
 const copy: Record<Locale, Copy> = {
   pl: {
     eyebrow: "Meble łazienkowe • wkrótce",
-    title: "Dobrze dobrane meble zmieniają całą łazienkę.",
+    title: "Dobre meble. Piękna łazienka.",
     lead: "Przygotowujemy starannie wybraną ofertę szafek i mebli łazienkowych. Łączymy ponadczasowy wygląd z wygodą codziennego użytkowania.",
     primaryCta: "Poznaj nas",
     secondaryCta: "Dla producentów",
@@ -68,7 +68,7 @@ const copy: Record<Locale, Copy> = {
   },
   en: {
     eyebrow: "Bathroom furniture • coming soon",
-    title: "The right furniture transforms a bathroom.",
+    title: "Good furniture. A better bathroom.",
     lead: "We are preparing a carefully selected range of bathroom cabinets and furniture, bringing timeless design together with everyday comfort.",
     primaryCta: "Meet us",
     secondaryCta: "For manufacturers",
@@ -112,7 +112,7 @@ export function CompanyLanding({ locale = "pl" }: { locale?: Locale }) {
         <div className="mx-auto grid max-w-[1320px] lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] lg:items-center lg:gap-12 lg:px-16 xl:gap-16">
           <div className="order-2 px-6 py-14 sm:px-10 sm:py-20 lg:order-1 lg:px-0 lg:py-24">
             <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#856344]">{t.eyebrow}</p>
-            <h1 className="mt-6 max-w-[650px] text-[clamp(2.5rem,4.5vw,4.75rem)] font-semibold leading-[1.08] tracking-[-0.04em]">{t.title}</h1>
+            <h1 className="mt-7 max-w-[560px] text-[clamp(2.5rem,3.4vw,3.625rem)] font-semibold leading-[1.18] tracking-[-0.025em]">{t.title}</h1>
             <p className="mt-7 max-w-[540px] text-base leading-8 text-[#52616a] sm:text-lg">{t.lead}</p>
             <div className="mt-9 flex flex-wrap gap-3">
               <a href="#about" className="inline-flex min-h-12 items-center justify-center rounded-full bg-[#243849] px-6 text-sm font-semibold text-white transition hover:bg-[#385369] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#243849]">
@@ -179,17 +179,17 @@ export function CompanyLanding({ locale = "pl" }: { locale?: Locale }) {
         <div className="mx-auto max-w-[1200px] px-6 sm:px-10 lg:px-16">
           <div className="grid items-end gap-9 lg:grid-cols-[minmax(0,1fr)_auto] lg:gap-14">
             <div className="max-w-[760px]">
-              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#d8bd93]">{t.suppliersEyebrow}</p>
+              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#d1ddce]">{t.suppliersEyebrow}</p>
               <h2 className="mt-5 text-3xl font-semibold leading-[1.18] tracking-[-0.03em] sm:text-4xl">{t.suppliersTitle}</h2>
               <p className="mt-6 max-w-[650px] text-base leading-8 text-white/75">{t.suppliersBody}</p>
             </div>
-            <a href={"mailto:kontakt@meblelazienkowe.com.pl?subject=" + subject} className="inline-flex min-h-12 items-center justify-center rounded-full bg-[#d2b58a] px-6 text-sm font-semibold text-[#243849] transition hover:bg-[#e2c9a4] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">
+            <a href={"mailto:kontakt@meblelazienkowe.com.pl?subject=" + subject} className="inline-flex min-h-12 items-center justify-center rounded-full bg-[#dfe7da] px-6 text-sm font-semibold text-[#243849] transition hover:bg-[#edf2e9] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">
               {t.suppliersCta} <span className="ml-3" aria-hidden="true">↗</span>
             </a>
           </div>
           <div className="mt-12 grid gap-4 border-t border-white/20 pt-6 sm:grid-cols-3">
             {t.supplierPoints.map((point) => (
-              <p key={point} className="flex items-center gap-3 text-sm text-white/80"><span className="text-[#d8bd93]" aria-hidden="true">✓</span>{point}</p>
+              <p key={point} className="flex items-center gap-3 text-sm text-white/80"><span className="text-[#d1ddce]" aria-hidden="true">✓</span>{point}</p>
             ))}
           </div>
         </div>
