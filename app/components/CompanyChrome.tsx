@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect } from "react";
@@ -37,14 +38,15 @@ export function CompanyChrome({ children }: { children: ReactNode }) {
     <div className="flex min-h-screen flex-col bg-[#fbfaf8]">
       <header className="sticky top-0 z-40 border-b border-slate-200/80 bg-[#fbfaf8]/95 backdrop-blur">
         <nav className="mx-auto flex h-[76px] max-w-[1320px] items-center justify-between gap-6 px-6 sm:px-10 lg:px-16">
-          <Link href={isEnglish ? "/en" : "/"} className="group flex items-center gap-3">
-            <span className="flex h-10 w-10 items-center justify-center rounded-full bg-[#0F1A2B] text-lg font-semibold text-[#D6B86A]">
-              M
-            </span>
-            <span>
-              <span className="block text-sm font-semibold tracking-[0.12em] text-[#0F1A2B]">MEBLE</span>
-              <span className="block text-[10px] uppercase tracking-[0.22em] text-[#A18443]">łazienkowe</span>
-            </span>
+          <Link href={isEnglish ? "/en" : "/"} aria-label={isEnglish ? "meblelazienkowe.com.pl — home" : "meblelazienkowe.com.pl — strona główna"} className="shrink-0">
+            <Image
+              src="/images/logo.svg"
+              alt="meblelazienkowe.com.pl"
+              width={159}
+              height={54}
+              className="h-auto w-[128px] sm:w-[159px]"
+              priority
+            />
           </Link>
           <div className="hidden items-center gap-7 text-sm text-slate-600 md:flex">
             <a href="#about" className="transition hover:text-[#0F1A2B]">{t.about}</a>
